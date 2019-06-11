@@ -42,9 +42,7 @@ detections, objects_path = detector.detectCustomObjectsFromImage(custom_objects=
 EOF;
         }
 
-        return <<<EOF
-detections, objects_path = detector.detectObjectsFromImage(
-EOF;
+        return "detections, objects_path = detector.detectObjectsFromImage(";
     }
 
     protected function speed()
