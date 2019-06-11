@@ -16,6 +16,8 @@
   ],
   "require": {
     "php": "^7.1",
+    "intervention/image": "^2.4",
+    "symfony/filesystem": "^4.3",
     "symfony/process": "^4.0"
   },
   "require-dev": {
@@ -29,10 +31,7 @@
   "autoload-dev": {
     "psr-4": {
       "Awssat\\ImageAi\\Test\\": "tests"
-    },
-    "files": [
-      "tests/helpers.php"
-    ]
+    }
   },
   "scripts": {
     "test": "vendor/bin/phpunit"
