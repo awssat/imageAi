@@ -8,7 +8,7 @@ Php soultion for https://github.com/OlafenwaMoses/ImageAI . If you'd like to try
 
 Via Composer
 ```bash
-composer require awssat/imageAi
+composer require awssat/imageai
 ```
 
 
