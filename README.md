@@ -16,11 +16,13 @@ composer require awssat/imageAi
 
 It's simple. Anytime you want sync schema files to database run this command:
 ```php
-        $imageAi = imageAi::image($img)->model('RetinaNet', '/path/to/resnet50_coco_best_v2.0.1.h5')->detect();
+$imageAi = imageAi::image($img)->model('RetinaNet', '/path/to/resnet50_coco_best_v2.0.1.h5')->detect();
 ```
 ##### Result
 
 ```php
+
+$imageAi->results = 
         [
             [
                 "name": "car"
@@ -59,7 +61,7 @@ you must download the RetinaNet, YOLOv3 or TinyYOLOv3 object detection model via
 You can define speed of detection (affect accuracy) by simply calling
 
 ```php
-        $imageAi = imageAi::image($img)->speed('fast')->model('RetinaNet', '/path/to/resnet50_coco_best_v2.0.1.h5')->detect();
+$imageAi = imageAi::image($img)->speed('fast')->model('RetinaNet', '/path/to/resnet50_coco_best_v2.0.1.h5')->detect();
 ```
 
 supported speeds (fast, faster, fastest, flash)
@@ -69,7 +71,7 @@ supported speeds (fast, faster, fastest, flash)
 You can only detect custom objects
 
 ```php
-        $imageAi = imageAi::image($img)->customObjects(['car'])->model('RetinaNet', '/path/to/resnet50_coco_best_v2.0.1.h5')->detect();
+$imageAi = imageAi::image($img)->customObjects(['car'])->model('RetinaNet', '/path/to/resnet50_coco_best_v2.0.1.h5')->detect();
 ```
 
 #### Percentage
@@ -77,7 +79,7 @@ You can only detect custom objects
 Define a minimum percentage of detection proccess
 
 ```php
-        $imageAi = imageAi::image($img)->customObjects(['car'])->percentage(90)->model('RetinaNet', '/path/to/resnet50_coco_best_v2.0.1.h5')->detect();
+$imageAi = imageAi::image($img)->customObjects(['car'])->percentage(90)->model('RetinaNet', '/path/to/resnet50_coco_best_v2.0.1.h5')->detect();
 ```
 
 
