@@ -1,6 +1,6 @@
 # Php ImageaAi
 
-Php soultion for https://github.com/OlafenwaMoses/ImageAI . If you'd like to try AI features in Php you ca with help of python libraries
+Php soultion for https://github.com/OlafenwaMoses/ImageAI . try AI features in Php with help of python libraries
 
 ## Requirements 
  First you need to install https://github.com/OlafenwaMoses/ImageAI with all requirements 
@@ -14,7 +14,7 @@ composer require awssat/imageai
 
 ## Usage
 
-It's simple. Anytime you want sync schema files to database run this command:
+
 ```php
 $imageAi = imageAi::image($img)->model('RetinaNet', '/path/to/resnet50_coco_best_v2.0.1.h5')->detect();
 ```
