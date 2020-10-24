@@ -117,7 +117,7 @@ class imageAi
                 $this->fsObject->dumpFile($this->execPath, $this->pythonGenerator->generate());
             }
         } catch (\Exception $exception) {
-            throw  new \Exception("Error creating file at" . $exception->getPath());
+            throw  new \Exception("Error creating file at" . $exception->getFile());
         }
     }
 
